@@ -1,13 +1,12 @@
-# Python program to add two numbers
+import sys
 
 print("Addition of Two Numbers")
 
-# Take input from the user
-num1 = int(input("Enter the first number: "))
-num2 = int(input("Enter the second number: "))
+num1 = int(sys.argv[1])
+num2 = int(sys.argv[2])
 
-# Add the numbers
 result = num1 + num2
 
-# Display the result
-print("The sum is:", result)
+print("First number:", num1)
+print("Second number:", num2)
+print("Addition:", result)
